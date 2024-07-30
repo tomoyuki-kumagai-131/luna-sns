@@ -7,21 +7,20 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Luna SNS - 人々をつなぐSNS</title>
-        <meta name="description" content="Luna SNS - 人々をつなぐソーシャルネットワーク" />
+        <title>Luna Match - 人々をつなぐマッチングアプリ</title>
+        <meta name="description" content="Luna Match - 人々をつなぐマッチングアプリ" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <div className={styles.container}>
-        <h1 className={styles.title}>Luna SNSへようこそ</h1>
+        <h1 className={styles.title}>Luna Match</h1>
 
         <div className={styles.heroSection}>
           <Image
             src="/images/luna-sns-hero.jpg"
-            alt="Luna SNSでつながる人々"
-            width={600}
-            height={400}
-            layout="responsive"
+            alt="Luna Match つながる人々"
+            objectFit="cover"
+            layout="fill"
             unoptimized
           />
         </div>
@@ -29,6 +28,12 @@ export default function Home() {
         <p className={styles.description}>
           他の人々とつながり、あなたの考えを共有し、理想のパートナーを見つけましょう！
         </p>
+        <div className={styles.cta}>
+          <p className={styles.ctaText}>\今すぐ無料で始めましょう！/</p>
+          <Link href="/signup" className={styles.button}>
+            START
+          </Link>
+        </div>
 
         <div className={styles.grid}>
           <div className={styles.card}>
@@ -45,12 +50,6 @@ export default function Home() {
             <h2>理想のパートナーを見つける</h2>
             <p>相性と共通の興味に基づいて、パートナーを発見しましょう。</p>
           </div>
-        </div>
-
-        <div className={styles.cta}>
-          <Link href="/signup" className={styles.button}>
-            START
-          </Link>
         </div>
       </div>
     </>
