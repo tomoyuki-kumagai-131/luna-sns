@@ -1,0 +1,28 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.signupPrompt {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.signupPrompt a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signupPrompt a:hover {
+  text-decoration: underline;
+}
