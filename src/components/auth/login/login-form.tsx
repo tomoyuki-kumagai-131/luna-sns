@@ -30,7 +30,7 @@ export const LoginForm = () => {
   const onSubmit = async (data: FormData) => {
     try {
       await signInWithEmailAndPassword(auth, data.email, data.password)
-      router.push('/dashboard')
+      router.push('/')
     } catch (error) {
       setError('ログインに失敗しました。メールアドレスとパスワードを確認してください。')
       console.error(error)

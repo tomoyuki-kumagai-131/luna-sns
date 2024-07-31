@@ -56,7 +56,7 @@ export const SignupForm = () => {
         createdAt: new Date(),
       })
 
-      router.push('/dashboard')
+      router.push('/')
     } catch (error) {
       setError('登録中にエラーが発生しました。もう一度お試しください。')
       console.error(error)

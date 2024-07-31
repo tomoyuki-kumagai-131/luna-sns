@@ -11,17 +11,14 @@ export const Header = () => {
     <header className={styles.header}>
       <nav className={styles.nav}>
         <Link href="/" className={styles.logo}>
-          Luna SNS
+          Luna Match
         </Link>
         <ul className={styles.navItems}>
           {user ? (
             <>
-              <li>
-                <Link href="/dashboard">DASHBOARD</Link>
-              </li>
-              <li>
+              <div>
                 <button onClick={() => auth.signOut()}>LOGOUT</button>
-              </li>
+              </div>
             </>
           ) : (
             <>

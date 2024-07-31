@@ -1,0 +1,45 @@
+.postList {
+  margin-top: 20px;
+}
+
+.post {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.post p {
+  margin: 0 0 5px 0;
+}
+
+.post small {
+  color: #666;
+}
+
+.deleteButton {
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: #e74c3c;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.deleteButton:hover {
+  opacity: 1;
+}
+
+.deleteButton img {
+  filter: brightness(0) invert(1); /* これにより、アイコンが白色になります */
+}
